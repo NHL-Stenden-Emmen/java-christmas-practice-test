@@ -44,7 +44,7 @@ public class Intratuin
     {
         for (PriceLabel priceLabel : this.products)
         {
-            System.out.println(priceLabel);
+            System.out.println(priceLabel.getProductInformation());
             System.out.println("Price " + priceLabel.getPrice());
         }
     }
