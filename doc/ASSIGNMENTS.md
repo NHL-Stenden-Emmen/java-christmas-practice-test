@@ -1,27 +1,39 @@
 # Case Intratuin
 
 ## Assignment 1
-Make the classes for the Christmas trees, Christmas lights and Christmas balls.
+Make the classes for the Christmas trees, Christmas lights and Christmas balls. Also implement the functionality to 
+turn on the Christmas lights within a Christmas tree.
 
 ## Assignment 2
-Make a method in the Christmas tree that turns on the Christmas lights (if the tree has any).
+Make the Intratuin class. This class should hold all the products that have a price tag.
 
 ## Assignment 3
-Make the `Intratuin` class. This class should hold all the products that have a price label.
+Make a method in Intratuin that returns all the information of products in the store: their price and information about the product.
 
-## Assignment 4
-Make a method in `Intratuin` that prints all the products in the store: their price and information about the product.
+If you would print it, it should be formatted like this:
 
-Example:
 ```text
-Christmas Tree; Nordmann; Height: 1,50m; &euro; 30,-
-Christmas Ball; Blue; 25cm; &euro; 1,-
-Christmas Lights; Purple; 30m; &euro; 20,-
+---- Intratuin Stock ----
+{Description} - {Price}
 ```
 
-## Assignment 5
-Make a method in Intratuin that turns on all the Christmas trees lightning (based on the list of all products).
-*Hint: To make your code more readable: make a method in the `Intratuin` class that only returns Christmas trees.*
+The following is an example of how it could look like:
 
-## Assignment 6
-Make Unit tests for the application. Make at least one for the Christmas ball to test the exception.
+```text
+---- Intratuin Stock ----
+White Christmas Lights (5m) - €20
+Nordmann - €30
+Nordway Spruce (with Red Christmas Lights (3m)) - €63
+```
+
+## Assignment 4
+Every morning an employee has to turn on all the Christmas trees to attract customers to the store. Make a method in 
+Intratuin that turns on all the Christmas trees.
+
+## Assignment 5
+At some day one of the Christmas balls suppliers provides the Intratuin with Christmas balls that are way to big. 
+To prevent that these balls are being registered within the application, an exception should be thrown when a Christmas 
+ball has a bigger diameter than 30 centimeters.
+
+1.	Make a `ChristmasBallToBigException` and prevent that balls bigger dan 30 centimeters are being created.
+2.	Make a Unit test for the Christmas ball to test the exception.
