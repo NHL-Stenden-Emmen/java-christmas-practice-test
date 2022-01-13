@@ -1,16 +1,19 @@
 package com.nhlstenden.lightning;
 
-public class RgbLightning extends Lightning
+public class RedLightning extends Lightning
 {
-    public RgbLightning(LightningLength lightningLength)
+    public RedLightning(LightningLength lightningLength)
     {
         super(lightningLength);
     }
 
     @Override
-    public String turnOn()
+    public void turnOn()
     {
-        return "I'm giving a little bit more color in your life.";
+        for (LED led : this.leds)
+        {
+            led.setRedOn(true);
+        }
     }
 
     @Override
@@ -22,6 +25,6 @@ public class RgbLightning extends Lightning
     @Override
     public String getProductInformation()
     {
-        return "RGB lightning.";
+        return "Red lightning";
     }
 }

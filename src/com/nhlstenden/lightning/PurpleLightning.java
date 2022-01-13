@@ -1,16 +1,20 @@
 package com.nhlstenden.lightning;
 
-public class RgbLightningFlickering extends Lightning
+public class PurpleLightning extends Lightning
 {
-    public RgbLightningFlickering(LightningLength lightningLength)
+    public PurpleLightning(LightningLength lightningLength)
     {
         super(lightningLength);
     }
 
     @Override
-    public String turnOn()
+    public void turnOn()
     {
-        return "I'm ready to have a little party.";
+        for (LED led : this.leds)
+        {
+            led.setRedOn(true);
+            led.setBlueOn(true);
+        }
     }
 
     @Override
@@ -22,6 +26,6 @@ public class RgbLightningFlickering extends Lightning
     @Override
     public String getProductInformation()
     {
-        return "RGB flicking lights.";
+        return "Purple lightning";
     }
 }

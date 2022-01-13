@@ -22,18 +22,4 @@ class ChristmasTreeTest
     {
         assertEquals(10, this.fakePlastic.getHeight());
     }
-
-    @Test
-    void turnOnLights_shouldReturnCorrectString()
-    {
-        WhiteLightning whiteLightning = new WhiteLightning(LightningLength.LENGTH_1_METER);
-        this.fakePlastic.setLightning(whiteLightning);
-        assertEquals("I'm just shining boring white.", this.fakePlastic.turnOnLightning());
-    }
-
-    @Test
-    void turnOnLights_shouldReturnNoLightningString()
-    {
-        assertEquals("I have no lightning :(", this.fakePlastic.turnOnLightning());
-    }
 }

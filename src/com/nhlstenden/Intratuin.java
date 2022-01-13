@@ -56,7 +56,7 @@ public class Intratuin
     {
         for (ChristmasTree christmasTree : this.getChristmasTrees())
         {
-            System.out.println(christmasTree.turnOnLightning());
+            christmasTree.turnOnLightning();
         }
     }
 

@@ -8,9 +8,14 @@ public class WhiteLightning extends Lightning
     }
 
     @Override
-    public String turnOn()
+    public void turnOn()
     {
-        return "I'm just shining boring white.";
+        for (LED led : this.leds)
+        {
+            led.setRedOn(true);
+            led.setGreenOn(true);
+            led.setBlueOn(true);
+        }
     }
 
     @Override

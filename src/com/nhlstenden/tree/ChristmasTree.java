@@ -62,16 +62,15 @@ public abstract class ChristmasTree implements PriceLabel
 
     /**
      * Turn on the lightning on the Christmas tree.
-     * @return The lightning text.
      */
-    public String turnOnLightning()
+    public void turnOnLightning()
     {
         if (null == this.lightning)
         {
-            return "I have no lightning :(";
+            return;
         }
 
-        return this.lightning.turnOn();
+        this.lightning.turnOn();
     }
 
     /**
